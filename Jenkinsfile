@@ -18,11 +18,11 @@ node
     }
 	
 	stage('Approval') {
-		steps {
+		
                 script {
                     def approvalNeeded = input id: 'Authenticate CI and Validate', message: 'Deploy to production?', submitter: 'chansk'
                 }
-            }
+           
 	}
 	
     stage('Authenticate CI and Validate')
