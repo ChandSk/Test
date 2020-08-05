@@ -9,7 +9,7 @@ on:
       - develop
 
 jobs:
-  #Triggers when there is a Pull Request Validations on CI Orgs  
+  #Triggers when there is a Pull Request Validations on CI Orgss  
   SCE_Validate_CI:
     name: CI Validation
     if: ${{ github.event_name == 'pull_request' && github.base_ref == 'develop'}}
